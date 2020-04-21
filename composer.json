@@ -1,0 +1,39 @@
+{
+    "name": "yosmy/authentication-with-password",
+    "description": "",
+    "require": {
+        "php": ">=7.2",
+        "ext-json": "*",
+        "yosmy/credential": "@dev",
+        "yosmy/authentication": "@dev",
+        "yosmy/password": "@dev",
+        "yosmy/phone": "@dev",
+        "yosmy/session": "@dev"
+    },
+    "require-dev": {
+        "symfony/debug": "~4",
+        "phpunit/phpunit": "^8"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yosmy\\": [
+                "src"
+            ]
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Yosmy\\Test\\": [
+                "tests"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://php.yosmy.com"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
